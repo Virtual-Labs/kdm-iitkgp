@@ -1,0 +1,16 @@
+<?php
+$username = "vlabdbusr";
+$password = "%vls@13TECH#db";
+//$username = "root";
+//$password = "";
+$hostname = "10.128.8.64";
+$database = "vls1_web";
+ 
+//
+//connection to the database
+$con = mysqli_connect("10.128.8.64","vlabdbusr","%vls@13TECH#db", "vls1_web") or die("Unabllle to connect to MySQL, please try after some time");
+ //= mysqli_select_db($database,$dbhandle)
+  //or die("Could not select examples");
+//define("CON", $con);
+mysqli_close();
+?>
