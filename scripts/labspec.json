@@ -97,9 +97,9 @@
             "discipline": [
                 "Computer Science & Engineering"
             ], 
-            "id": "cse02", 
+            "id": "kdm01", 
             "integration_level": 5, 
-            "name": "Computer Programming", 
+            "name": "Kinematics & Dynamics of Mechanism", 
             "server-side": true, 
             "status": "Released", 
             "type": ""
