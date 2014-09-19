@@ -21,29 +21,29 @@
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "jawahar@iiit.ac.in", 
-                        "mobile_number": "", 
+                        "email": "mitrajit.samanta@iitkgp.ac.in", 
+                        "mobile_number": "+91-3222-286946", 
                         "office_number": ""
                     }, 
                     "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Jawahar C.V", 
-                    "organization": "", 
+                    "institute": "IIT Kharagpur", 
+                    "name": "Mitrajit Samanta", 
+                    "organization": "IIT Kharagpur", 
                     "role": "Lab Developer", 
                     "title": "", 
-                    "web": ""
+                    "web": "http://vls1.iitkgp.ernet.in"
                 }, 
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "phani@iiit.ac.in", 
+                        "email": "pkjana@iit.ac.in", 
                         "mobile_number": "", 
-                        "office_number": ""
+                        "office_number": "+91-3222-264133"
                     }, 
-                    "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Phani Phani", 
-                    "organization": "", 
+                    "department": "Mechanical Engineering Department", 
+                    "institute": "IIT Kharagpur", 
+                    "name": "Pabitra K Jana", 
+                    "organization": "IIT Kharagpur", 
                     "role": "Lab RA", 
                     "title": "", 
                     "web": ""

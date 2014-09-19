@@ -1,1 +1,0 @@
-<a href="https://www.facebook.com/dialog/oauth?client_id=177639729007660&redirect_uri=http://vls1.iitkgp.ernet.in/vls_web/facebook/oauth/data.php&state=5ddbb9b177a408afff08c9d561a69d8c&scope=read_stream, publish_stream, user_birthday, user_location, user_work_history, user_hometown, user_photos">Click</a>
