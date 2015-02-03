@@ -1,140 +1,96 @@
 {
-    "lab": {
-        "build_requirements": {
-            "platform": {
-                "arch": "i386", 
-                "build_steps": {
-                    "build": ["make -C ../src"], 
-                    "configure": [], 
-                    "post_build": [], 
-                    "pre_build": [], 
-                    "status": []
-                }, 
-                "installer": [], 
-                "os": "ubuntu", 
-                "osVersion": "12", 
-                "service_pack": ""
-            }
-        }, 
+    "lab": {        
         "description": {
+            "discipline": ["Mechanical Science & Engineering"],
+            "name": "Kinematics & Dynamics of Mechanism",
+            "id": "kdm01",
+            "status": "Under Development", 
+            "type": "Simulation",                        
+            "server-side": true, 
+            "integration_level": 5, 
             "developer": [
                 {
-                    "contact": {
-                        "alternate_email": "", 
-                        "email": "mitrajit.samanta@iitkgp.ac.in", 
-                        "mobile_number": "+91-3222-286946", 
-                        "office_number": ""
-                    }, 
-                    "department": "", 
-                    "institute": "IIT Kharagpur", 
-                    "name": "Mitrajit Samanta", 
-                    "organization": "IIT Kharagpur", 
-                    "role": "Lab Developer", 
-                    "title": "", 
-                    "web": "http://vls1.iitkgp.ernet.in"
-                }, 
-                {
-                    "contact": {
-                        "alternate_email": "", 
-                        "email": "pkjana@iit.ac.in", 
-                        "mobile_number": "", 
-                        "office_number": "+91-3222-264133"
-                    }, 
+                    "name": "Mitrajit Samanta",
+                    "title": "",
+                    "role": "Lab Developer",
+                    "organization": "IIT Kharagpur",  
                     "department": "Mechanical Engineering Department", 
-                    "institute": "IIT Kharagpur", 
-                    "name": "Pabitra K Jana", 
-                    "organization": "IIT Kharagpur", 
-                    "role": "Lab RA", 
-                    "title": "", 
-                    "web": ""
+                    "institute": "IIT Kharagpur",
+                    "web": "http://vls1.iitkgp.ernet.in" 
+                    "contact": {
+                    	"email": "mitrajit.samanta@iitkgp.ac.in",
+                        "alternate_email": "",                         
+                        "mobile_number": "", 
+                        "office_number": "+91 3222 282962"
+                    }                         
                 }, 
                 {
+                    "name": "Pabitra K Jana",
+                    "title": "",
+                    "role": "Lab Developer",
+                    "organization": "IIT Kharagpur",  
+                    "department": "Mechanical Engineering Department", 
+                    "institute": "IIT Kharagpur",
+                    "web": "http://vls1.iitkgp.ernet.in" 
                     "contact": {
-                        "alternate_email": "", 
-                        "email": "kumarsrijan@students.iiit.ac.in", 
+                    	"email": "pkjana@iitkgp.ac.in",
+                        "alternate_email": "",                         
                         "mobile_number": "", 
-                        "office_number": ""
-                    }, 
-                    "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Kumar Srijan", 
-                    "organization": "", 
-                    "role": "Lab RA", 
-                    "title": "", 
-                    "web": ""
-                }, 
-                {
-                    "contact": {
-                        "alternate_email": "", 
-                        "email": "jayaguru.pandaug08@students.iiit.ac.in", 
-                        "mobile_number": "", 
-                        "office_number": ""
-                    }, 
-                    "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Jay Panda", 
-                    "organization": "", 
-                    "role": "Lab RA", 
-                    "title": "", 
-                    "web": ""
-                }, 
-                {
-                    "contact": {
-                        "alternate_email": "", 
-                        "email": "shashank.sharmaug08@students.iiit.ac.in", 
-                        "mobile_number": "", 
-                        "office_number": ""
-                    }, 
-                    "department": "", 
-                    "institute": "IIIT Hyderabad", 
-                    "name": "Shashank Sharma", 
-                    "organization": "", 
-                    "role": "Lab RA", 
-                    "title": "", 
-                    "web": ""
+                        "office_number": "+91 3222 282962"
+                    }
                 }
-            ], 
-            "discipline": [
-                "Computer Science & Engineering"
-            ], 
-            "id": "kdm01", 
-            "integration_level": 5, 
-            "name": "Kinematics & Dynamics of Mechanism", 
-            "server-side": true, 
-            "status": "Released", 
-            "type": ""
+            ]           
+        },
+        "build_requirements": {
+            "platform": {
+            	"os": "ubuntu", 
+                "osVersion": "12",
+                "arch": "i386",
+                "service_pack": "",
+                "installer": [], 
+                "build_steps": {
+                	"configure": [],
+                	"pre_build": [], 
+                	"build": ["make -C ../src"],                    
+                	"post_build": [],                     
+                	"status": []
+                }
+            }
         }, 
         "runtime_requirements": {
             "platform": {
+            	"os": "ubuntu", 
+                "osVersion": "12", 
                 "arch": "i386", 
-                "hosting": "dedicated", 
-                "installer": ["sudo apt-get update",
-                "sudo apt-get install -y php5 apache2"], 
-                "lab_actions": {
-                    "backup": [], 
-                    "clean": [], 
-                    "init": ["mv /var/www/index.html index.html.default",
-                        "cp -r ../build/* /var/www/"
-                        ], 
-                    "pause": [], 
-                    "publish": [], 
-                    "restore": [], 
-                    "resume": [], 
-                    "shutdown": ["service apache2 stop"], 
-                    "start": ["service apache2 start"],  
-                    "stats": [], 
-                    "stop": []
-                }, 
+                "servicepack": "",
+                "hosting": "dedicated",
                 "memory": {
                     "max_required": "2gb", 
                     "min_required": "256mb"
-                }, 
-                "os": "ubuntu", 
-                "osVersion": "12", 
-                "servicepack": "", 
+                },                
                 "storage": {
                     "min_required": "10gb"
-                }
+                },
+                "installer": [
+                	"sudo apt-get update",
+                	"sudo apt-get install -y php5 apache2"
+                ], 
+                "lab_actions": {                    
+                    "init": [
+                    	"mv /var/www/index.html index.html.default",
+                        "cp -r ../build/* /var/www/"
+                     ],                     
+                    "shutdown": ["service apache2 stop"],
+                    "pause": [], 
+                    "resume": [],                     
+                    "start": ["service apache2 start"],
+                    "stop": [],
+                    "backup": [],
+                    "restore": [],
+                    "clean": [],
+                    "stats": [],
+                    "publish": []                    
+                }               
             }
         }
     }, 
