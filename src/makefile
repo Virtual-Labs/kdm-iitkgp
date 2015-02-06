@@ -1,3 +1,16 @@
+#
+#---------------------IIT KGP SECTION----------------------------------------------
+#
+# Author: pkjana@iitkgp.ac.in
+# Date  : 06-02-2015
+#
+#http://www.gnu.org/software/make/manual/make.html#Recursion
+#Calling recursive makefile
+subsystem:
+	cd jsrc && $(MAKE)
+
+
+#------------------------IIITH SECTION---------------------------------------------
 build-dir=../build
 lib-dir=lib
 build-js-dir=${build-dir}/js

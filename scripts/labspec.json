@@ -1,98 +1,98 @@
 {
-    "lab": {        
+    "lab": {
         "description": {
             "discipline": ["Mechanical Science & Engineering"],
             "name": "Kinematics & Dynamics of Mechanism",
             "id": "kdm01",
-            "status": "Under Development", 
-            "type": "Simulation",                        
-            "server-side": true, 
-            "integration_level": 5, 
+            "status": "Under Development",
+            "type": "Simulation",
+            "server-side": true,
+            "integration_level": 5,
             "developer": [
                 {
                     "name": "Mitrajit Samanta",
                     "title": "",
                     "role": "Lab Developer",
-                    "organization": "IIT Kharagpur",  
-                    "department": "Mechanical Engineering Department", 
+                    "organization": "IIT Kharagpur",
+                    "department": "Mechanical Engineering Department",
                     "institute": "IIT Kharagpur",
-                    "web": "http://vls1.iitkgp.ernet.in", 
+                    "web": "http://vls1.iitkgp.ernet.in",
                     "contact": {
-                    	"email": "mitrajit.samanta@iitkgp.ac.in",
-                        "alternate_email": "",                         
-                        "mobile_number": "", 
+                        "email": "mitrajit.samanta@iitkgp.ac.in",
+                        "alternate_email": "",
+                        "mobile_number": "",
                         "office_number": "+91 3222 282962"
-                    }                         
-                }, 
+                    }
+                },
                 {
                     "name": "Pabitra K Jana",
                     "title": "",
                     "role": "Lab Developer",
-                    "organization": "IIT Kharagpur",  
-                    "department": "Mechanical Engineering Department", 
+                    "organization": "IIT Kharagpur",
+                    "department": "Mechanical Engineering Department",
                     "institute": "IIT Kharagpur",
-                    "web": "http://vls1.iitkgp.ernet.in", 
+                    "web": "http://vls1.iitkgp.ernet.in",
                     "contact": {
-                    	"email": "pkjana@iitkgp.ac.in",
-                        "alternate_email": "",                         
-                        "mobile_number": "", 
+                        "email": "pkjana@iitkgp.ac.in",
+                        "alternate_email": "",
+                        "mobile_number": "",
                         "office_number": "+91 3222 282962"
                     }
                 }
-            ]           
+            ]
         },
         "build_requirements": {
             "platform": {
-            	"os": "ubuntu", 
+                "os": "ubuntu",
                 "osVersion": "12",
                 "arch": "i386",
                 "service_pack": "",
-                "installer": [], 
+                "installer": [],
                 "build_steps": {
-                	"configure": [],
-                	"pre_build": [], 
-                	"build": ["make -C ../src"],                    
-                	"post_build": [],                     
-                	"status": []
+                    "configure": [],
+                    "pre_build": [],
+                    "build": ["make -C ../src"],
+                    "post_build": [],
+                    "status": []
                 }
             }
-        }, 
+        },
         "runtime_requirements": {
             "platform": {
-            	"os": "ubuntu", 
-                "osVersion": "12", 
-                "arch": "i386", 
+                "os": "ubuntu",
+                "osVersion": "12",
+                "arch": "i386",
                 "servicepack": "",
                 "hosting": "dedicated",
                 "memory": {
-                    "max_required": "2gb", 
+                    "max_required": "2gb",
                     "min_required": "256mb"
-                },                
+                },
                 "storage": {
                     "min_required": "10gb"
                 },
                 "installer": [
-                	"sudo apt-get update",
-                	"sudo apt-get install -y php5 apache2"
-                ], 
-                "lab_actions": {                    
+                    "sudo apt-get update",
+                    "sudo apt-get install -y php5 apache2"
+                ],
+                "lab_actions": {
                     "init": [
-                    	"mv /var/www/index.html index.html.default",
+                        "mv /var/www/index.html index.html.default",
                         "cp -r ../build/* /var/www/"
-                     ],                     
+                    ],
                     "shutdown": ["service apache2 stop"],
-                    "pause": [], 
-                    "resume": [],                     
+                    "pause": [],
+                    "resume": [],
                     "start": ["service apache2 start"],
                     "stop": [],
                     "backup": [],
                     "restore": [],
                     "clean": [],
                     "stats": [],
-                    "publish": []                    
-                }               
+                    "publish": []
+                }
             }
         }
-    }, 
+    },
     "template": "1.0"
 }
